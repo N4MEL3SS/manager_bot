@@ -17,5 +17,7 @@
     # Настройки уведомлений
     NOTIFY_MANAGERS_NEW_TICKETS=True
     NOTIFICATION_COOLDOWN=30
+
+    N8N_WEBHOOK_URL=<n8n_webhook_url>
     ```
 3. Запустите ботов командой `python main.py`
