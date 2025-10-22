@@ -74,7 +74,8 @@ async def health_check():
 
 
 async def run_n8n_webhook():
-    config = uvicorn.Config(app, host="127.0.0.1", port=5090, log_level="info")
+    config = uvicorn.Config(app, host="0.0.0.0", port=5090, log_level="info")
     server = uvicorn.Server(config)
     await server.serve()
+
 
